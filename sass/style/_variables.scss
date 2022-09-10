@@ -2,19 +2,21 @@
 $ff-main: 'Karla', sans-serif;
 
 // font size//
-$fs-main: 2.4rem;
-$fs-sub: 1.5rem;
+$fs-800: 3rem;
+$fs-700: 2.5rem;
+$fs-600: 2rem;
+$fs-500: 1.5rem;
 
 // font weight//
-$fw-200: 200;
 $fw-400: 400;
-$fw-600: 600;
+$fw-700: 700;
 
 // color //
-$color-sub: hsl(71, 73%, 54%);
+$color-accent: hsl(71, 73%, 54%);
 $color-main: hsl(179, 62%, 43%);
-$color-bg: hsl(218, 22%, 67%);
-$color-bg-card: hsl(204, 43%, 93%);
+$color-sub: hsl(218, 22%, 67%);
+$color-bg: hsl(204, 43%, 93%);
+$color-white : hsl(0, 0%, 100%);
 
 
 

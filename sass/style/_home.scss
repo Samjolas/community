@@ -1,2 +1,96 @@
 @use 'variables' as a;
 
+.card {
+  max-width: 64rem;
+  width: calc(100% - 8rem);
+  display: grid;
+  background: a.$color-white;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .5rem a.$color-sub;grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'join join' 'plan why';
+  &>* {
+    padding: 4rem;
+    display: grid;
+  }
+}
+
+.join {
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  &__heading {
+    font-weight: a.$fw-700;
+    color: a.$color-main;
+    font-size: a.$fs-700;
+  }
+  &__des {
+    font-weight: a.$fw-700;
+    color: a.$color-accent;
+    font-size: a.$fs-600;
+  }
+  &__details {
+    font-weight: a.$fw-400;
+    color: a.$color-sub;
+    font-size: a.$fs-500;
+  }
+
+}
+
+.plan {
+  grid-area: plan;
+  background: darken(a.$color-main, 4%);
+  gap: 2rem;
+  border-bottom-left-radius: .5rem;
+  &__heading {
+    font-size: a.$fs-600;
+    font-weight: a.$fw-700;
+    color: rgba(a.$color-white, 90%);
+  }
+  &__cost {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__price {
+    font-size: a.$fs-800;
+    font-weight: a.$fw-700;
+    color: a.$color-white;
+  }
+  &__duration {
+    font-size: a.$fs-500;
+    font-weight: a.$fw-400;
+    color: rgba(a.$color-white, 40%);
+  }
+  &__details {
+    font-size: a.$fs-500;
+    font-weight: a.$fw-400;
+    color: rgba(a.$color-white, 75%);
+  }
+
+
+
+}
+
+.why {
+  grid-area: why;
+  background: rgba(a.$color-main, 100%);
+  gap: 2rem;
+  border-bottom-right-radius: .5rem;
+  &__heading {
+    font-size: a.$fs-600;
+    font-weight: a.$fw-700;
+    color: rgba(a.$color-white, 90%);
+  }
+  &__details {
+    font-size: a.$fs-500;
+    font-weight: a.$fw-400;
+    color: rgba(a.$color-white, 75%);
+  }
+  &__list {
+    list-style-type: none;
+  }
+
+}
