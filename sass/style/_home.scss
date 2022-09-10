@@ -2,7 +2,8 @@
 
 .card {
   max-width: 64rem;
-  width: calc(100% - 8rem);
+  width: calc(100% - 16rem);
+  margin: 7rem 0;
   display: grid;
   background: a.$color-white;
   border-radius: .5rem;
@@ -92,5 +93,18 @@
   &__list {
     list-style-type: none;
   }
+}
 
+@media (max-width: 800px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'join' 'plan' 'why';
+    width: calc(100% - 6rem);
+  }
+  .plan {
+    border-bottom-left-radius: 0;
+  }
+  .why {
+    border-bottom-left-radius: .5rem;
+  }
 }
